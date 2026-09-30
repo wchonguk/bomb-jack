@@ -1,0 +1,47 @@
+/* Keep the page simple and let the game provide all of its own visuals. */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  background: #000;
+  color: #fff;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  font-family: monospace;
+}
+
+.game-shell {
+  width: min(768px, 100vw);
+  text-align: center;
+}
+
+#game-canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #000;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+.controls-hint {
+  margin: 10px 0 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}

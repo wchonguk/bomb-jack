@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bomb Jack - Retro Platform Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <h1 class="visually-hidden">Bomb Jack</h1>
+    <!-- The canvas stays at 256 by 192 internally and is enlarged with CSS. -->
+    <canvas id="game-canvas" width="256" height="192" aria-label="Bomb Jack game"></canvas>
+    <p class="controls-hint">Move: ← → &nbsp; Jump: Space</p>
+  </main>
+
+  <!-- Plain scripts are used so the game can be launched directly from index.html. -->
+  <script src="js/input.js"></script>
+  <script src="js/level.js"></script>
+  <script src="js/sprite-atlas.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/bomb.js"></script>
+  <script src="js/enemy.js"></script>
+  <script src="js/score.js"></script>
+  <script src="js/power-orb.js"></script>
+  <script src="js/bonus.js"></script>
+  <script src="js/renderer.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
